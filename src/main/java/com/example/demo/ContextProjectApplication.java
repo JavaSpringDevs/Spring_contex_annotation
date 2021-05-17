@@ -13,10 +13,10 @@ import com.example.demo.compenents.VehiclesComponents;
 public class ContextProjectApplication {
 
 	public static void main(String[] args) {
-	ApplicationContext ctx =	SpringApplication.run(ContextProjectApplication.class, args);
-	
-	 VehiclesComponents controller = (VehiclesComponents) ctx.getBean("vehiclesComponents");
-	 controller.service();
+	/*ApplicationContext ctx =*/	SpringApplication.run(ContextProjectApplication.class, args);
+	 //VehiclesComponents controller = (VehiclesComponents) ctx.getBean("vehiclesComponents");
+	 //controller.service();
+	//ctx.getEnvironment()
 	}
 
 }

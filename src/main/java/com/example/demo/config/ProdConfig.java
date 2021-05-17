@@ -1,17 +1,16 @@
 package com.example.demo.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile("dev")
-public class DevConfig {
+@Profile("prod")
+public class ProdConfig {
+	
 	@Bean
-	public BeanDev beanDev() {
-		
-		return new BeanDev();
+	public BeanProd beanProd() {
+		return new BeanProd();
 	}
 
 }
